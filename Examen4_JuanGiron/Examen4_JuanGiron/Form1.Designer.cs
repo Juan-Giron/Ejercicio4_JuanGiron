@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Guardar_button = new System.Windows.Forms.Button();
             this.Nombre_textBox = new System.Windows.Forms.TextBox();
             this.Edad_textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // Guardar_button
             // 
-            this.button1.Location = new System.Drawing.Point(473, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Guardar_button.Location = new System.Drawing.Point(383, 125);
+            this.Guardar_button.Name = "Guardar_button";
+            this.Guardar_button.Size = new System.Drawing.Size(75, 23);
+            this.Guardar_button.TabIndex = 0;
+            this.Guardar_button.Text = "Guardar";
+            this.Guardar_button.UseVisualStyleBackColor = true;
+            this.Guardar_button.Click += new System.EventHandler(this.button1_Click);
             // 
             // Nombre_textBox
             // 
-            this.Nombre_textBox.Location = new System.Drawing.Point(141, 121);
+            this.Nombre_textBox.Location = new System.Drawing.Point(95, 43);
             this.Nombre_textBox.Name = "Nombre_textBox";
             this.Nombre_textBox.Size = new System.Drawing.Size(191, 20);
             this.Nombre_textBox.TabIndex = 1;
             // 
             // Edad_textBox
             // 
-            this.Edad_textBox.Location = new System.Drawing.Point(141, 167);
+            this.Edad_textBox.Location = new System.Drawing.Point(95, 89);
             this.Edad_textBox.Name = "Edad_textBox";
             this.Edad_textBox.Size = new System.Drawing.Size(191, 20);
             this.Edad_textBox.TabIndex = 2;
@@ -64,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 123);
+            this.label1.Location = new System.Drawing.Point(23, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 3;
@@ -73,42 +75,55 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 170);
+            this.label2.Location = new System.Drawing.Point(23, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Edad : ";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(141, 324);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 87);
-            this.textBox1.TabIndex = 5;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(141, 255);
+            this.comboBox1.Location = new System.Drawing.Point(132, 239);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(191, 21);
             this.comboBox1.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(61, 242);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Registro :";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Nombre_textBox);
+            this.groupBox1.Controls.Add(this.Edad_textBox);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(37, 55);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(317, 154);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Usuario";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(484, 291);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Edad_textBox);
-            this.Controls.Add(this.Nombre_textBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Guardar_button);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,13 +131,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Guardar_button;
         private System.Windows.Forms.TextBox Nombre_textBox;
         private System.Windows.Forms.TextBox Edad_textBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
